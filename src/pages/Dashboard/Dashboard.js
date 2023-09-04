@@ -9,7 +9,7 @@ import { query, collection, getDocs, where } from "firebase/firestore";
 
 
 function Dashboard() {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [name, setName] = useState("");
 
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Dashboard() {
       const data = doc.docs[0].data();
       setName(data.name);
     } catch (err) {
-      console.error(err);
+      console.log(err);
       alert("An error occured while fetching user data");
     }
   };
