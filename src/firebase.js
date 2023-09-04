@@ -17,26 +17,18 @@ import {
   addDoc,
 } from "firebase/firestore";
 
-<>
-<pre>{process.env.REACT_PUBLIC_API_KEY}</pre>
-<pre>{process.env.REACT_PUCIC_AUTH_DOMAIN}</pre>
-<pre>{process.env.REACT_PUBLIC_PROJCT_ID}</pre>
-<pre>{process.env.REACT_PUBLIC_STORAGE_BUCKET}</pre>
-<pre>{process.env.REACT_PUBLIC_MESSAGE_SENDER_ID}</pre>
-<pre>{process.env.REACT_PUBLIC_APP_ID}</pre>
-<pre>{process.env.REACT_PUBLIC_MEASUREMENT}</pre>
-</>
-
 
 const firebaseConfig = {
-  apiKey: fetch('https://awesome.api.io?api-key=${process.env.REACT_PUBLIC_API_KEY '),
-  authDomain: fetch('https://awesome.api.io?api-key=${process.env.REACT_PUCIC_AUTH_DOMAIN'),
-  projectId: fetch('https://awesome.api.io?api-key=${process.env..REACT_PUBLIC_PROJCT_ID'),
-  storageBucket: fetch('https://awesome.api.io?api-key=${process.env.REACT_PUBLIC_STORAGE_BUCKET'),
-  messagingSenderId: fetch('https://awesome.api.io?api-key=${process.env.REACT_PUBLIC_MESSAGE_SENDER_ID'),
-  appId: fetch('https://awesome.api.io?api-key=${process.env.REACT_PUBLIC_APP_ID'),
-  measurementId: fetch('https://awesome.api.io?api-key=${process.env.RREACT_PUBLIC_MEASUREMENT')
+  apiKey: process.env.REACT_APP_PUBLIC_API_KEY,
+  authDomain: process.env.REACT_APP_PUCIC_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PUBLIC_PROJCT_ID,
+  storageBucket: process.env.REACT_APP_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_PUBLIC_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_PUBLIC_APP_ID,
+  measurementId: process.env.RREACT_APP_PUBLIC_MEASUREMENT
 };
+
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
