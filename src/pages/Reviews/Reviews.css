@@ -1,0 +1,22 @@
+#reviews{
+    background-image:url("https://images.unsplash.com/photo-1633509846956-01f31700ead4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzM2fHxkb2clMjBvdXRzaWRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    border-bottom:5px solid var(--accent);
+    height: 100vh;
+    width:100vw;
+    align-items: center;
+    justify-content: right;
+    padding:2rem;
+    }
+    
+    #reviews section{
+        background-color: var(--white);
+        border: 8px solid var(--accent);
+        margin:5rem;
+        text-align: left;
+        width:35%;
+        padding:2rem;
+        min-width:200px;
+        height:60%;
+        overflow:auto;
+    }
