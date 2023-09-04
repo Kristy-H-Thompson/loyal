@@ -29,6 +29,7 @@
     margin-bottom: 10px;
   }
   .login__btn {
+    border-radius:5px;
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
@@ -55,6 +56,10 @@
     display:none;
   }
 
+  #theselinks {
+    display:none;
+  }
+
 
   @media (max-width: 1050px) {
     .login {
@@ -73,12 +78,22 @@
     .login__container {
       margin-inline:1.2rem;
     }
+
+    #theselinks {
+      display:grid;
+      color:black;
+      font-size:1.2rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-evenly;
+      width:100%;
+    }
   }
 
   @media (max-width: 700px) {
     .login{
     justify-content: center;
     background-image:url('../../assets/mobile.jpg');
+    padding-top:70%;
     }
 
     .loginHeadImage{
@@ -93,6 +108,23 @@
       background-size:cover;
       margin-bottom:0px;
       margin-top:60%;
+      padding:1rem;
+      margin-top:80%;
     }
+
+    .login__textBox {
+      font-size:1rem;
+      padding:5px;
+    }
+
+    .login__btn {
+    font-size: 18px;
+    border-radius:5px;
+    padding:5px;
+}
+
+.login div{
+  margin-top:0px;
+}
 
   }

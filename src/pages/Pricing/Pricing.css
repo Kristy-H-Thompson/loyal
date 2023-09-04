@@ -1,5 +1,5 @@
-#pricing {
-    background-image:url("https://images.unsplash.com/photo-1606477787346-91b6faa76b64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+.pricing {
+    background-image:url("https://images.unsplash.com/photo-1655993824879-3cc491bd503c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
     background-size: cover;
     border-bottom:5px solid var(--accent);
     height: 100vh;
@@ -9,7 +9,7 @@
     padding:2rem;
     }
 
-    #pricing section{
+    .pricing-container{
         background-color: var(--white);
         border: 8px solid var(--accent);
         margin:5rem;
@@ -19,4 +19,26 @@
         min-width:200px;
         height:60%;
         overflow:auto;
+    }
+
+
+    li {
+        font-size:1rem;
+    }
+    
+    @media (max-width: 700px) {
+        .pricing-container{
+            align-self: center;
+            width:60%;
+            margin:0px;
+            font-size: .9rem;
+        }
+    
+        .pricing-container p {
+            font-size:.9rem;
+        }
+    
+        .pricing{
+        justify-content: center;
+    }
     }

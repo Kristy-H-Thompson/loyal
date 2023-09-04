@@ -26,6 +26,12 @@ function Register() {
   return (
     <div className="register">
       <div className="register__container">
+      <div id="theselinks">
+      <Link to="/about" >About</Link>
+      <Link to="/review">Reviews</Link>
+      <Link to="/pricing">Pricing</Link>
+      </div>
+      <br/>
       <img alt="Loya logo" src={logo}/>
 
         <input

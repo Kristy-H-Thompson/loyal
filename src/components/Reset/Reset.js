@@ -16,6 +16,12 @@ function Reset() {
   return (
     <div className="reset">
       <div className="reset__container">
+      <div id="theselinks">
+      <Link to="/about" >About</Link>
+      <Link to="/review">Reviews</Link>
+      <Link to="/pricing">Pricing</Link>
+      </div>
+      <br/>
         <img alt="loyal logo" src={logo} />
         <input
           type="text"

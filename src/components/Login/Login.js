@@ -21,8 +21,15 @@ function Login() {
   }, [user, navigate, loading]);
   return (
     <div className="login">
-        
-      <div className="login__container">
+
+
+      <div className="login__container">          
+      <div id="theselinks">
+      <Link to="/about" >About</Link>
+      <Link to="/review">Reviews</Link>
+      <Link to="/pricing">Pricing</Link>
+      </div>
+      <br/>
         <img alt="Loyal Logo" src={logo} />
         <input
           type="text"
@@ -53,6 +60,9 @@ function Login() {
         <div>
           Don't have an account? <Link to="/register">Register</Link> now.
         </div>
+
+    
+      
       </div>
     </div>
   );

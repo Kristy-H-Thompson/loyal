@@ -4,19 +4,21 @@ import "./Pricing.css";
 
 const Pricing = () => {
   return (
-    <section id="pricing">
+    <section className="pricing">
         
-    <section>
-        <h2>About Loyal</h2>
+    <section className="pricing-container">
+        <h2>Pricing</h2>
         <hr />
-        <p>Are you a devoted dog parent looking for a seamless way to manage your furry friend's life? Look no further than Loyal, the ultimate dog web app designed to simplify every aspect of pet care. Loyal is your one-stop solution for organizing all your pet's vital information, ensuring their well-being, and streamlining your pet parenting journey.</p>
+        <p>At Loyal, we are committed to helping pet owners manage and organize their pets' information seamlessly. Whether you have a single pet or a bustling household with multiple furry friends, our pricing plans are designed to cater to your needs. We offer two distinct pricing plans: a Free Plan and a Family Plan, ensuring that every pet owner can enjoy the benefits of our web app.</p>
     
-        <ul>
-            <li>Comprehensive pet profiles</li>
-            <li>Printable pet sitter instructions</li>
-            <li>Set important reminders</li>
-            <li>Quick access to emergency Information</li>
-        </ul>
+        <h3>Free Plan</h3>
+        <hr/>
+        <p>Our Free Plan is perfect for individual pet owners who want to start organizing their pet's information and stay connected with their beloved companions.</p>
+   
+      <h3>Family Plan</h3>
+      <hr/>
+      <p>Our Family Plan is designed for households with multiple pets and pet lovers who want comprehensive pet management tools. With the Paws & Claws Unlimited plan, you'll enjoy all the features of the Free Plan, plus these additional benefits:</p>
+   
     </section>
 
 </section>
