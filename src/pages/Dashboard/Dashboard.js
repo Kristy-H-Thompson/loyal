@@ -12,30 +12,37 @@ import { email, download, edit } from "../../assets";
 
 function Dashboard() {
   const [user, loading] = useAuthState(auth);
-  const [name, setName] = useState("");
+
 
   const navigate = useNavigate();
+
+
   const fetchUserName = async () => {
     try {
       const q = query(collection(db, "users"), where("uid", "==", user?.uid));
       const doc = await getDocs(q);
       const data = doc.docs[0].data();
-      setName(data.name);
+      console.log(data);
     } catch (err) {
       console.log(err);
       alert("An error occured while fetching user data");
     }
   };
+
+  
+
+
   useEffect(() => {
     if (loading) return;
     if (!user) return navigate("/");
-    fetchUserName();
   });
+
+
   return (
     <>
     <div className="dashboard">
       <section className="dashboard-aside">      
-      <h2>{name}</h2>
+      <h2>{user?.name}</h2>
       <img alt="User profile" src="https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODM1fHxkb2clMjBvdXRzaWRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"></img>
             <p>{user?.email}</p><br/>
  

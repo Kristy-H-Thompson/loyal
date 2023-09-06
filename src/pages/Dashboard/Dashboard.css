@@ -28,6 +28,7 @@
     width:100%;
     background-color: var(--accentborder)
   }
+
   .animal__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -45,7 +46,7 @@
     margin-top: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: var(--accent);
     margin:1rem;
   }
   .dashboard div {
