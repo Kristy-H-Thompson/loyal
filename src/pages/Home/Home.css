@@ -6,7 +6,13 @@ header {
     text-align: left;
 }
 
+header span {
+    font-family: var(--spanFont);
+}
 
+.header-information {
+    padding-right:1rem;
+}
 .header-img{
     max-height:100%;
     width:100%;

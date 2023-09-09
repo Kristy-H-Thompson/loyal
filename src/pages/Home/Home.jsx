@@ -11,7 +11,7 @@ const Home = () => {
       <img alt="wave" className="header-img" src={Wave} />
     </div>
 
-    <div>
+    <div className="header-information">
       <h1>Loyal</h1>
       <span>Your Pet's Care Companion</span>
       <p>Are you a devoted pet parent looking for a seamless way to manage your furry friend's life? Look no further than Loyal, the ultimate pet web app designed to simplify every aspect of pet care. Loyal is your one-stop solution for organizing all your pet's vital information, ensuring their well-being, and streamlining your pet parenting journey.</p>
