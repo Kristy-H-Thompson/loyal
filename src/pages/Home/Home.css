@@ -13,14 +13,28 @@ header span {
 }
 
 header button{
-    background-color:#7ee5ba;
-    font-family: var(--spanFont);
-    font-size: 1.5rem;
+    background-color: var(--blue);
+    border-radius: 5px;
+    border:none;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    font-size:1.6rem;
+    letter-spacing: .1rem;
+    padding:.5rem;
+    padding-inline: 1rem;
+    max-width:100%;
+}
+
+header button:hover {
+    background-color: var(--blue)
 }
 
 .header-information {
-    padding-right:1rem;
+    padding:1rem;
+
 }
+
 .header-img{
     max-height:100%;
     width:100%;
