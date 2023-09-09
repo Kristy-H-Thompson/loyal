@@ -8,7 +8,7 @@ const Home = () => {
     <>
     <header>
     <div>
-      <img src={wave} />
+      <img src={Wave} />
     </div>
 
     <div>
