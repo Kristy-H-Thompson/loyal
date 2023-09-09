@@ -5,7 +5,7 @@ export { default as mobile } from './mobile.jpg';
 export { default as edit } from './edit.png';
 export { default as email } from './email.png';
 export { default as download } from './download.png';
-export { default as wave } from './wave.png';
+export { default as Wave } from './wave.png';
 
 
 
