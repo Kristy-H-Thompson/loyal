@@ -1,7 +1,7 @@
 header {
     background-color:var(--accent);
     border-bottom-right-radius: 70%;
-    display: grid;
+    display: grid block;
     grid-template-columns: 1fr 1fr;
     height:60vh;
     text-align: center;
@@ -42,11 +42,27 @@ header button:hover {
     padding:4rem;   
     margin-top:2rem;
     width:80%;
+    max-height:90%;
 }
 
 .header-img{
     height:100%;
     max-width:100%;
     max-height:100%;
+
+}
+
+.header-img__container {
+    max-height:100%;
+}
+
+@media (max-width: 800px) {
+    .header-information {
+        padding:3rem;
+    }
+
+    header button{
+        font-size:1.3rem;
+    }
 
 }

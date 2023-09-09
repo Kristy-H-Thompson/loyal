@@ -62,3 +62,12 @@ p {
   font-size:1rem;
   font-family:'Times New Roman', Times, serif
 }
+
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: .8rem;
+    margin:.5px;
+  }
+}

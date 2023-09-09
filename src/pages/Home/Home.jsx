@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <header>
-    <div>
+    <div className="header-img__container">
       <img alt="wave" className="header-img" src={Wave} />
     </div>
 
