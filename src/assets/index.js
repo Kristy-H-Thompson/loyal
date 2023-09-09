@@ -6,6 +6,8 @@ export { default as edit } from './edit.png';
 export { default as email } from './email.png';
 export { default as download } from './download.png';
 export { default as Wave } from './wave.png';
+export { default as Paint } from './paintSplash.png';
+
 
 
 

@@ -19,7 +19,18 @@ const Home = () => {
     </header>
     
 
-    <h2>Your pet</h2>
+    <h2>Your Pet's Care Companion.</h2>
+    <div className="feature-grid">
+      <div classNaame="feature"> 
+        <span>Create Custom Pet Profiles</span>
+      </div>
+      <div classNaame="feature"> 
+        <span>Set Important Reminders</span>
+      </div>
+      <div classNaame="feature"> 
+        <span>Share With Friends</span>
+      </div>
+    </div>
     </>
   )
 }
