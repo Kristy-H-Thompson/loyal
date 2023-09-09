@@ -62,8 +62,11 @@ header button:hover {
 .feature-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin-left:auto;
+    margin-right:auto;
     padding:1rem;
-    width:70%;
+    width:60%;
 }
 .feature {
     aspect-ratio: 1/1;

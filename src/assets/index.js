@@ -7,6 +7,12 @@ export { default as email } from './email.png';
 export { default as download } from './download.png';
 export { default as Wave } from './wave.png';
 export { default as Paint } from './paintSplash.png';
+export { default as Profile } from './profile.png';
+export { default as Reminders } from './reminders.png';
+export { default as Share } from './profile.png';
+
+
+
 
 
 
