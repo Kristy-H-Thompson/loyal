@@ -8,6 +8,12 @@ header {
 
 header span {
     font-family: var(--spanFont);
+    font-size:2rem;
+    margin:0px;
+}
+
+header button{
+    font-family: var(--spanFont);
 }
 
 .header-information {

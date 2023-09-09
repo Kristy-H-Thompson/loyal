@@ -44,7 +44,9 @@
 
 h1 {
   font-family:var(--titleFont);
-  font-size: 3rem;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  margin:.5px;
 }
 
 h2{
