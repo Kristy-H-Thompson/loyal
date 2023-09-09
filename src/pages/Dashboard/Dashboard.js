@@ -1,112 +1,82 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "../../firebase.js";
-import { query, collection, getDocs, where } from "firebase/firestore";
-import { email, download, edit } from "../../assets";
-
-
+import { collection, onSnapshot } from "firebase/firestore"; // Added getDocs
+import {Animal } from '../../components/'
 
 
 
 function Dashboard() {
   const [user, loading] = useAuthState(auth);
-
+  const [pets, setPets] = useState([]); // Initialize as an empty array
 
   const navigate = useNavigate();
 
-
-  const fetchUserName = async () => {
+  const fetchPets = () => {
     try {
-      const q = query(collection(db, "users"), where("uid", "==", user?.uid));
-      const doc = await getDocs(q);
-      const data = doc.docs[0].data();
-      console.log(data);
+      onSnapshot(collection(db, "pets"), (snapshot) => {
+        // Log the data directly here
+        console.log(snapshot.docs.map((doc) => doc.data()));
+        setPets(snapshot.docs.map((doc) => doc.data()));
+      });
     } catch (err) {
       console.log(err);
-      alert("An error occured while fetching user data");
+      alert("An error occurred while fetching pet data");
     }
   };
-
-  
-
 
   useEffect(() => {
     if (loading) return;
     if (!user) return navigate("/");
-  });
-
+    console.log(user);
+    fetchPets(); // Call fetchPets inside useEffect
+  }, [loading, user, navigate]); // Specify dependencies for useEffect
 
   return (
     <>
-    <div className="dashboard">
-      <section className="dashboard-aside">      
-      <h2>{user?.name}</h2>
-      <img alt="User profile" src="https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODM1fHxkb2clMjBvdXRzaWRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"></img>
-            <p>{user?.email}</p><br/>
- 
-      
-      <h3>Account Information</h3>
-      <ul>
-        <li>View member profile</li>
-        <li>Edit member profile</li>
-        <li>Account status</li>
-      </ul>
-      </section>
+      <div className="dashboard">
+        <section className="dashboard-aside">
+          <h2>{user?.displayName}</h2>
+          <img
+            alt="User profile"
+            src="https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODM1fHxkb2clMjBvdXRzaWRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+          ></img>
+          <p>{user?.email}</p>
+          <br />
 
-      <section className="dashboard-animals">
+          <h3>Account Information</h3>
+          <ul>
+            <li>View member profile</li>
+            <li>Edit member profile</li>
+            <li>Account status</li>
+          </ul>
+        </section>
 
-        <div className="util-buttons">
-          <button className="dashboard__btn">Add new pet</button>     
-          <button className="dashboard__btn" onClick={logout}>Logout</button>
-        </div>
-        
-       <div className="animal__container">
+        <section className="dashboard-animals">
+          <div className="util-buttons">
+            <button className="dashboard__btn">Add new pet</button>
+            <button className="dashboard__btn" onClick={logout}>
+              Logout
+            </button>
+          </div>
 
-       <div className='quick-buttons'>          
-          <img className="quick-button"  alt="edit" src={edit}/>
-          <img className="quick-button" alt="email" src={email}/> 
-          <img className="quick-button"  alt="download" src={download}/>
-       </div>
-
-       <div>
-       <img alt="User profile" className="pet-photo" src="https://images.unsplash.com/photo-1523626797181-8c5ae80d40c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODM1fHxkb2clMjBvdXRzaWRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"></img>
-      </div> 
-
-      <div className="pet-reminders">
-        <h3>Mr.Chonk</h3>        
-        <ul>
-          <li>vet appointment one January 2nd</li>
-          <li>grooming appointment one February 3rd</li>
-          <li>playdate with Doggo on March 1st</li>
-        </ul>
-      </div>
-       </div>
-
-
-
-       <div className="animal__container">
-        Logged in as
-        
-       </div>
-
-       <div className="animal__container">
-        Logged in as
-        
-       </div>
-
-       <div className="animal__container">
-        Logged in as
-        
-       </div>
-
-
-     </section>     
+          {pets.map((pet,index)=>{
+         return (
+         <Animal petName={pet.petName} petImage={pet.petImage} />
+         )
+     })}
      
-    </div>
-
-     </>
+        </section>
+ </div>
+    </>
   );
 }
+
 export default Dashboard;
+
+
+
+
+

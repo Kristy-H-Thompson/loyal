@@ -1,0 +1,32 @@
+  .animal__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: var(--accent);
+    border:4px solid var(--white);
+    padding: 30px;
+    text-align: left;
+    gap:.5rem;
+  }
+
+.pet-photo{
+  aspect-ratio:1/1;
+  border:5px solid var(--accentborder);
+  box-sizing: border-box;
+  max-width:100%;
+}
+
+.pet-reminders{
+  grid-column: span 2;
+}
+
+.quick-buttons{
+  text-align:right;
+}
+
+.quick-button{
+  aspect-ratio: 1/1;
+  margin:.5rem;
+  width:35px;
+}
+

@@ -1,0 +1,6 @@
+header {
+    background-color:var(--accent);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height:60vh;
+}
