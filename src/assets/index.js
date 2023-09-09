@@ -9,7 +9,7 @@ export { default as Wave } from './wave.png';
 export { default as Paint } from './paintSplash.png';
 export { default as Profile } from './profile.png';
 export { default as Reminders } from './reminders.png';
-export { default as Share } from './profile.png';
+export { default as Share } from './share.png';
 
 
 

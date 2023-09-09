@@ -62,17 +62,23 @@ header button:hover {
 .feature-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-left:auto;
     margin-right:auto;
     padding:1rem;
-    width:60%;
+    width:70%;
 }
 .feature {
     aspect-ratio: 1/1;
     background-image:url('../../assets/paintSplash.png');
     background-size:cover;
     color:var(--white);
+    padding:1rem;
+    width:100%;
+}
+
+.feature img {
+    aspect-ratio: 1/1;
     width:100%;
 }
 
