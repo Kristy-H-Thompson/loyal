@@ -38,6 +38,7 @@ header button:hover {
 
 .header-information {
     background-color:var(--white);
+    border-radius: 50%;
     padding:4rem;
 }
 
