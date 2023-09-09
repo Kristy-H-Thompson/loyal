@@ -9,6 +9,7 @@
   --titleFont:  'Bebas Neue', sans-serif;
   --spanFont: font-family: 'Playfair Display', serif;
 
+  background-color: var(--white);
   font-size: 14px;
   height:100vh;
   width:100vw;
