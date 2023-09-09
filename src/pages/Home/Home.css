@@ -44,7 +44,7 @@ header button:hover {
     border-radius: 50%;
     padding:4rem;   
     margin-top:2rem;
-    width:40%;
+    width:50%;
     max-height:90%;
 }
 
@@ -66,7 +66,7 @@ header button:hover {
 }
 .feature {
     aspect-ratio: 1/1;
-    background-image:url('../../assets/loginImage.jpg');
+    background-image:url('../../assets/paintSplash.png');
     background-size:cover;
     color:var(--white);
     width:100%;
