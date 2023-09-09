@@ -20,7 +20,7 @@ header p {
 }
 
 header button{
-    background-color: var(--blue);
+    background-color: var(--purple);
     border-radius: 5px;
     border:none;
     box-sizing: border-box;
@@ -62,7 +62,8 @@ header button:hover {
 .feature-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width:100%;
+    padding:1rem;
+    width:70%;
 }
 .feature {
     aspect-ratio: 1/1;
