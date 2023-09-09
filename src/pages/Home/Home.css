@@ -1,11 +1,13 @@
 header {
     background-color:var(--accent);
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     height:60vh;
     text-align: left;
 }
 
+
 .header-img{
+    max-height:100%;
     width:100%;
 }
