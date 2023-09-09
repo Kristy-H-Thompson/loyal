@@ -6,6 +6,7 @@ header {
     height:60vh;
     text-align: center;
     padding-inline: 1rem;
+    overflow: none;
 }
 
 header span {
@@ -37,6 +38,7 @@ header button:hover {
 }
 
 .header-information {
+    aspect-ratio: 1/1;
     background-color:var(--white);
     border-radius: 50%;
     padding:4rem;   
@@ -48,7 +50,7 @@ header button:hover {
 .header-img{
     height:100%;
     max-width:100%;
-    max-height:100%;
+    max-height:60vh;
 
 }
 
@@ -62,7 +64,16 @@ header button:hover {
     }
 
     header button{
-        font-size:1.3rem;
+        font-size:1.2rem;
     }
+
+    header p {
+        line-height:1.2rem;
+    }
+
+    
+header span {
+    font-size:1.2rem;
+}
 
 }
