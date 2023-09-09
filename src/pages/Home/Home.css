@@ -1,15 +1,21 @@
 header {
     background-color:var(--accent);
+    border-bottom-right-radius: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height:60vh;
-    text-align: left;
+    text-align: center;
+    padding: 1rem;
 }
 
 header span {
     font-family: var(--spanFont);
     font-size:1.5rem;
     margin:0px;
+}
+
+header p {
+    line-height:1.4rem;
 }
 
 header button{
@@ -31,11 +37,11 @@ header button:hover {
 }
 
 .header-information {
-    padding:1rem;
-
+    background-color:var(--white);
+    padding:4rem;
 }
 
 .header-img{
-    max-height:100%;
-    width:100%;
+    height:100%;
+    max-width:100%;
 }
