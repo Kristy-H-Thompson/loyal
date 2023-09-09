@@ -8,12 +8,14 @@ header {
 
 header span {
     font-family: var(--spanFont);
-    font-size:2rem;
+    font-size:1.5rem;
     margin:0px;
 }
 
 header button{
+    background-color:#7ee5ba;
     font-family: var(--spanFont);
+    font-size: 1.5rem;
 }
 
 .header-information {
