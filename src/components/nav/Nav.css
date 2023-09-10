@@ -13,10 +13,15 @@ nav ul{
     display:grid;
     font-size:1.6rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    margin-right:2rem;
+    justify-content:right;
+    margin-right:1rem;
+    margin-left:10%;
     padding-left:0px;
-    width:75%;
+    width:85%;
+}
+
+nav ul li{
+    align-items: right;
 }
 
 nav img{
@@ -35,7 +40,7 @@ Link:hover{
 }
 
 nav button{
-    background-color: var(--accent);
+    background-color: var(--purple);
     border-radius: 5px;
     border:none;
     box-sizing: border-box;

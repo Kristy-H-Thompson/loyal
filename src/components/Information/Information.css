@@ -1,0 +1,24 @@
+.information{
+    background-color: var(--accent);
+    border-top-left-radius: 70%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:2rem;
+    text-align: left;
+    width:100%;
+}
+
+.information img{
+    aspect-ratio: 1/1;
+    max-height:300px;
+    max-width:100%;
+}
+
+.information .info{
+    aspect-ratio: 1/1;
+    background-color:var(--white);
+    border-radius:50%;
+    box-sizing: border-box;
+    padding:5rem;
+    width:65%;
+}

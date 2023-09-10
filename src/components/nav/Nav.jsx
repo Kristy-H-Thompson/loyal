@@ -12,7 +12,7 @@ const Nav = () => {
       <Link to="/about" className="info">About</Link>
       <Link to="/review" className="info">Reviews</Link>
       <Link to="/pricing" className="info">Pricing</Link>
-      <Link to="/"><button>Login</button></Link>
+      <Link to="/login"><button>Login</button></Link>
       <Link to="/register"><button>Register</button></Link>
 
     </ul>

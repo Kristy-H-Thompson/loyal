@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Home.css";
-import {Profile, Reminders, Share, Wave} from '../../assets/'
+import { Wave} from '../../assets/'
+import {Features, Information, Reviews} from '../../components/'
+
 
 
 
@@ -18,25 +20,10 @@ const Home = () => {
       <button>Get Started </button>
     </div>
     </header>
-    
 
-    <h2>Your Pet's Care Companion.</h2>
-    <div className="feature-grid">      
-    <div className="feature"> 
-        <span>Set Important Reminders</span>
-        <img src={Reminders} alt="reminders" />
-      </div>
-      <div className="feature"> 
-        <span>Create Custom Pet Profiles</span>
-        <img src={Profile} alt="pet profiles"/>
-      </div>
-
-      <div className="feature"> 
-        <span>Share With Friends</span>
-        <img src={Share} alt="share"/>
-
-      </div>
-    </div>
+  <Features />  
+  <Information/>
+  <Reviews />
     </>
   )
 }

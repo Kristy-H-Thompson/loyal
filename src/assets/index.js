@@ -10,6 +10,10 @@ export { default as Paint } from './paintSplash.png';
 export { default as Profile } from './profile.png';
 export { default as Reminders } from './reminders.png';
 export { default as Share } from './share.png';
+export { default as InformationOne } from './informationOne.png';
+export { default as InformationTwo } from './informationTwo.png';
+
+
 
 
 
